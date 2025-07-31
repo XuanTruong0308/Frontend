@@ -1,0 +1,180 @@
+.section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.stepNumber {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.numberCircle {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ff69b4, #7e5bef);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.numberCircle:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+
+.connectingLine {
+  position: absolute;
+  top: 2.5rem;
+  left: 100%;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #e5e7eb;
+  transform: translateY(-50%);
+  z-index: 0;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .connectingLine {
+    display: block;
+  }
+}
+
+.lineProgress {
+  height: 100%;
+  background: linear-gradient(to right, #ff69b4, #7e5bef);
+}
+
+.iconContainer {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon.primary {
+  color: #ff69b4;
+}
+.icon.secondary {
+  color: #7e5bef;
+}
+.icon.accent {
+  color: #fbbf24;
+}
+.icon.green {
+  color: #10b981;
+}
+
+.stepTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.stepDescription {
+  color: #6b7280;
+  line-height: 1.625;
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.ctaButton {
+  background: linear-gradient(to right, #ff69b4, #7e5bef);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

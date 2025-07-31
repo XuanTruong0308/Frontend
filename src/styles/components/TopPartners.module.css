@@ -1,0 +1,266 @@
+.section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #fef7f0 0%, #f3e8ff 100%);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.partnerCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.partnerCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(255, 105, 180, 0.3);
+}
+
+.premiumBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(45deg, #fbbf24, #f59e0b);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.avatarSection {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.avatarContainer {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 1rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff69b4;
+}
+
+.onlineIndicator {
+  position: absolute;
+  bottom: -0.5rem;
+  right: -0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #10b981;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.partnerName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.partnerLocation {
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.ratingSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.star {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.starFilled {
+  color: #fbbf24;
+}
+
+.starEmpty {
+  color: #d1d5db;
+}
+
+.ratingValue {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.statsSection {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.statsValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff69b4;
+  margin-bottom: 0.25rem;
+}
+
+.statsLabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.viewButton {
+  width: 100%;
+  background: linear-gradient(45deg, #ff69b4, #7e5bef);
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.viewButton:hover {
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+  transform: translateY(-2px);
+}
+
+.decorativeElement1 {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(255, 105, 180, 0.1);
+  border-radius: 50%;
+}
+
+.decorativeElement2 {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(126, 91, 239, 0.1);
+  border-radius: 50%;
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.ctaButton {
+  background: white;
+  color: #ff69b4;
+  border: 2px solid #ff69b4;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background-color: #ff69b4;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+}
+
+.loading {
+  display: flex;
+  gap: 1rem;
+}
+
+.loadingCard {
+  background-color: #d1d5db;
+  height: 20rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

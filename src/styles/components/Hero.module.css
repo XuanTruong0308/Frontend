@@ -1,0 +1,137 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80");
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}
+
+.titleHighlight {
+  color: #ff69b4;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .buttonContainer {
+    flex-direction: row;
+  }
+}
+
+.primaryButton {
+  background-color: #ff69b4;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background-color: rgba(255, 105, 180, 0.9);
+}
+
+.secondaryButton {
+  border: 2px solid white;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  background: transparent;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background-color: white;
+  color: #1f2937;
+}
+
+.floatingElement1 {
+  position: absolute;
+  top: 5rem;
+  left: 2.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(255, 105, 180, 0.2);
+  border-radius: 50%;
+}
+
+.floatingElement2 {
+  position: absolute;
+  bottom: 5rem;
+  right: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(126, 91, 239, 0.2);
+  border-radius: 50%;
+}
+
+.floatingElement3 {
+  position: absolute;
+  top: 33.33%;
+  right: 5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(251, 191, 36, 0.2);
+  border-radius: 50%;
+}
