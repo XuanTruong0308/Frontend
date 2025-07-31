@@ -5,7 +5,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { servicesApi, partnersApi, bookingsApi, Service, Partner, Booking } from "@/lib/api";
+import { servicesApi, partnersApi,  Service, Partner, Booking } from "@/lib/api";
 
 // ============================================
 // TYPES
